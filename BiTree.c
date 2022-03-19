@@ -15,17 +15,17 @@ void preOrderTraverse(BiTree tree, void (*callback)(TElemType)/*回调函数*/) 
 // 中序遍历二叉树
 void inOrderTraverse(BiTree tree, void (*callback)(TElemType)) {
 	if (tree) {
-		preOrderTraverse(tree->lchild, callback); // 递归遍历左子树
+		inOrderTraverse(tree->lchild, callback); // 递归遍历左子树
 		callback(tree->data); // 访问节点
-		preOrderTraverse(tree->rchild, callback); // 递归遍历右子树
+		inOrderTraverse(tree->rchild, callback); // 递归遍历右子树
 	}
 }
 
 // 后序遍历二叉树
 void postOrderTraverse(BiTree tree, void (*callback)(TElemType)) {
 	if (tree) {
-		preOrderTraverse(tree->lchild, callback); // 递归遍历左子树
-		preOrderTraverse(tree->rchild, callback); // 递归遍历右子树
+		postOrderTraverse(tree->lchild, callback); // 递归遍历左子树
+		postOrderTraverse(tree->rchild, callback); // 递归遍历右子树
 		callback(tree->data); // 访问节点
 	}
 }
