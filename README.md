@@ -12,5 +12,6 @@
 | BiTree.c        | 二叉树                 |
 | Graph.c         | 图                     |
 | List.c          | 链表                   |
+| Maze.c          | 迷宫                   |
 
 **协议：MIT License**
