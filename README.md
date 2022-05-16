@@ -13,5 +13,6 @@
 | Graph.c         | 图                     |
 | List.c          | 链表                   |
 | Maze.c          | 迷宫                   |
+| HuffmanTree.c   | Huffman树及Huffman编码 |
 
 **协议：MIT License**
